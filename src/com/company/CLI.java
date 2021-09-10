@@ -22,7 +22,7 @@ public class CLI {
         return num;
     }
 
-    public static String getStr(String question) {
+    public static String getString(String question) {
         System.out.println(question);
         return input.nextLine();
     }

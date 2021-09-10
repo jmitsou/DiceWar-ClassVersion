@@ -1,29 +1,41 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class Player {
 
-    private String playerName;
-    private int playerScore;
+    private String Name;
+    private int Score;
+    private Hand hand;
 
-    public Player(String playerName, int playerScore) {
-        this.playerName = playerName;
-        this.playerScore = playerScore;
+    public Player(String Name, int Score) {
+        this.Name = Name;
+        this.Score = Score;
     }
 
-    public String getPlayerName() {
-        return playerName;
+    public ArrayList<Die> rollHand(){
+        hand.rollDice();
+        return hand.dice;
     }
 
-    public void setPlayerName(String playerName) {
-        this.playerName = playerName;
+    public void setHand(Hand hand){
+        this.hand = hand;
     }
 
-    public int getPlayerScore() {
-        return playerScore;
+    public String getName() {
+        return Name;
     }
 
-    public void setPlayerScore(int playerScore) {
-        this.playerScore = playerScore;
+    public void setName(String playerName) {
+        this.Name = playerName;
+    }
+
+    public int getScore() {
+        return Score;
+    }
+
+    public void setScore(int playerScore) {
+        this.Score = playerScore;
     }
 
 
